@@ -16,7 +16,7 @@
 
       <p><span class="error">* Campo obligatorio</span></p>
 
-      <form id="fquestion" name="fquestion" action="AddQuestionWithImage.php">
+      <form id="fquestion" name="fquestion" action="AddQuestionWithImage.php" method="POST" enctype="multipart/form-data">
         <br>
         E-mail: <input id ="em" type="text" name="email" size="25">
         <span class="error">* </span>

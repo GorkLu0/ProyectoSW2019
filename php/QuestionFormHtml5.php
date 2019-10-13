@@ -10,24 +10,24 @@
       <h3>Propón una pregunta</h3>
       <p><span class="error">* Campo obligatorio</span></p>
 
-      <form id="fquestion" name="fquestion" action="AddQuestion.php">
+      <form id="fquestion" name="fquestion" action="AddQuestion.php" method="POST">
         <br>
         E-mail: <input type="email" pattern="(((^[a-zA-Z]+)([0-9]{3})@ikasle\.ehu\.(eus|es))|((^[a-zA-Z]+)\.?([a-zA-Z]*)@ehu\.(eus|es)))" name="email" size="25" required>
         <span class="error">* </span>
         <br><br>
-        Pregunta: <br><input type="text" name="website" size="75" required>
+        Pregunta: <br><input type="text" pattern=".{10,}" name="website" size="75" required>
         <span class="error">*</span>
         <br><br>
-        Respuesta correcta: <br><input type="text" name="resp" size="75" required>
+        Respuesta correcta: <br><input type="text" name="respc" size="75" required>
         <span class="error">*</span>  
         <br><br>
-        Respuesta incorrecta 1: <br><input type="text" name="resp" size="75" required>
+        Respuesta incorrecta 1: <br><input type="text" name="resp1" size="75" required>
         <span class="error">*</span>
         <br><br>
-        Respuesta incorrecta 2: <br><input type="text" name="resp" size="75" required>
+        Respuesta incorrecta 2: <br><input type="text" name="resp2" size="75" required>
         <span class="error">*</span>
         <br><br>
-        Respuesta incorrecta 3: <br><input type="text" name="resp" size="75" required>
+        Respuesta incorrecta 3: <br><input type="text" name="resp3" size="75" required>
         <span class="error">*</span>
         <br><br>
         Temática de la pregunta: <br><input type="text" name="tema" size="75" required>

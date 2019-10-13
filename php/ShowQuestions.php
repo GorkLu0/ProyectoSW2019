@@ -6,7 +6,7 @@
 <body>
   <?php include '../php/Menus.php' ?>
   <section class="main" id="s1">
-    <div>
+    <div align="center"> 
       Código PHP para mostrar una tabla con las preguntas de la BD.<br>
       La tabla no incluye las imágenes
 
@@ -16,7 +16,7 @@
         $sql = "SELECT * FROM preguntas";
         $result = $conexion->query($sql);
 
-        echo "<table> <tr> <th>Autor</th> <th>Enunciado</th> <th>Respuesta</th> </tr>"
+        echo "<table border='1'> <tr> <th>Autor</th> <th>Enunciado</th> <th>Respuesta</th> </tr>";
 
         while($row = $result->fetch_assoc()){
           echo "<tr> <td>".$row['email']."</td> <td>".$row['pregunta']."</td> <td>".$row['correcta']."</td> </tr>";
