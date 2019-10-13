@@ -14,7 +14,7 @@
 
       <p><span class="error">* Campo obligatorio</span></p>
 
-      <form id="fquestion" name="fquestion" action="AddQuestion.php">
+      <form id="fquestion" name="fquestion" action="AddQuestion.php" method="POST">
         <br>
         E-mail: <input id ="em" type="text" name="email" size="25">
         <span class="error">* </span>
@@ -22,16 +22,16 @@
         Pregunta: <br><input type="text" name="website" size="75">
         <span class="error">*</span>
         <br><br>
-        Respuesta correcta: <br><input type="text" name="resp" size="75">
+        Respuesta correcta: <br><input type="text" name="respc" size="75">
         <span class="error">*</span>  
         <br><br>
-        Respuesta incorrecta 1: <br><input type="text" name="resp" size="75">
+        Respuesta incorrecta 1: <br><input type="text" name="resp1" size="75">
         <span class="error">*</span>
         <br><br>
-        Respuesta incorrecta 2: <br><input type="text" name="resp" size="75">
+        Respuesta incorrecta 2: <br><input type="text" name="resp2" size="75">
         <span class="error">*</span>
         <br><br>
-        Respuesta incorrecta 3: <br><input type="text" name="resp" size="75">
+        Respuesta incorrecta 3: <br><input type="text" name="resp3" size="75">
         <span class="error">*</span>
         <br><br>
         Temática de la pregunta: <br><input type="text" name="tema" size="75">
