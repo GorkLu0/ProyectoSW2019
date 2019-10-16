@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../js/jquery-3.4.1.min.js"></script>
 
   <script type="text/javascript" src="../js/ValidateFieldsQuestion.js"></script>
   <script type="text/javascript" src="../js/ShowImageInForm.js"></script>
@@ -16,24 +16,24 @@
 
       <p><span class="error">* Campo obligatorio</span></p>
 
-      <form id="fquestion" name="fquestion" action="AddQuestionWithImage.php" method="POST" enctype="multipart/form-data">
+      <form id="fquestion" method ="post" name="fquestion" action="AddQuestionWithImage.php"  enctype="multipart/form-data" >
         <br>
         E-mail: <input id ="em" type="text" name="email" size="25">
         <span class="error">* </span>
         <br>
-        Pregunta: <br><input type="text" name="website" size="75">
+        Pregunta: <br><input type="text" id="pre" name="website" size="75">
         <span class="error">*</span>
         <br>
-        Respuesta correcta: <br><input type="text" name="resp" size="75">
+        Respuesta correcta: <br><input type="text" name="respc" size="75">
         <span class="error">*</span>  
         <br>
-        Respuesta incorrecta 1: <br><input type="text" name="resp" size="75">
+        Respuesta incorrecta 1: <br><input type="text" name="resp1" size="75">
         <span class="error">*</span>
         <br>
-        Respuesta incorrecta 2: <br><input type="text" name="resp" size="75">
+        Respuesta incorrecta 2: <br><input type="text" name="resp2" size="75">
         <span class="error">*</span>
         <br>
-        Respuesta incorrecta 3: <br><input type="text" name="resp" size="75">
+        Respuesta incorrecta 3: <br><input type="text" name="resp3" size="75">
         <span class="error">*</span>
         <br>
         Temática de la pregunta: <br><input type="text" name="tema" size="75">
@@ -47,8 +47,7 @@
         </select>  
         <span class="error">* </span>
         <br><br>  
-        
-        <input type="file" name="my_file" id="my-file">  <input type="submit" name="submit" value="Submit">
+        <input type="file" name='myfile' id="my_file" >  <input type="submit" name="submit" value="Submit">
         <div id ="foto" class = "fotoo"><img id="ftt" src="" alt="your image" onerror="this.style.visibility='hidden'" height="140" width="150"/></div>
         <br><br>  
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../js/jquery-3.4.1.min.js"></script>
 
   <script type="text/javascript" src="../js/ValidateFieldsQuestion.js"></script>
   <?php include '../html/Head.html'?>
@@ -14,12 +14,12 @@
 
       <p><span class="error">* Campo obligatorio</span></p>
 
-      <form id="fquestion" name="fquestion" action="AddQuestion.php" method="POST">
+      <form id="fquestion" method="post" name="fquestion" action="AddQuestion.php">
         <br>
         E-mail: <input id ="em" type="text" name="email" size="25">
         <span class="error">* </span>
         <br><br>
-        Pregunta: <br><input type="text" name="website" size="75">
+        Pregunta: <br><input id ="pre" type="text" name="website" size="75">
         <span class="error">*</span>
         <br><br>
         Respuesta correcta: <br><input type="text" name="respc" size="75">

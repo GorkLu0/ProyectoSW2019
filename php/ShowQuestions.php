@@ -7,8 +7,7 @@
   <?php include '../php/Menus.php' ?>
   <section class="main" id="s1">
     <div align="center"> 
-      Código PHP para mostrar una tabla con las preguntas de la BD.<br>
-      La tabla no incluye las imágenes
+      <h2>PREGUNTAS SIN IMAGEN ALMACENADAS EN LA BD</h2><br><br>
 
       <?php
         require_once('DbConfig.php');
@@ -19,7 +18,9 @@
         echo "<table border='1'> <tr> <th>Autor</th> <th>Enunciado</th> <th>Respuesta</th> </tr>";
 
         while($row = $result->fetch_assoc()){
-          echo "<tr> <td>".$row['email']."</td> <td>".$row['pregunta']."</td> <td>".$row['correcta']."</td> </tr>";
+          if($row['foto']==""){
+            echo "<tr> <td>".$row['email']."</td> <td>".$row['pregunta']."</td> <td>".$row['correcta']."</td> </tr>";               
+          }
         }
         echo "</table>";
 

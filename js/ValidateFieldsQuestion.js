@@ -12,10 +12,13 @@ $(document).ready(function(){
     }
 });
 $( 'form' ).submit(function(  ) {
-  
-
+var pre = $('#pre').val();
  
-    
+  if(pre.length <= 9){
+    alert("La pregunta debe tener almenos 10 caracteres");
+    event.preventDefault();}
+
+  
 
     var empty = false;
 
@@ -26,6 +29,7 @@ $( 'form' ).submit(function(  ) {
           return true;
         }
       });  
+      
       
       var em  = $("#em").val();   
       var regex1 =  /^([a-zA-Z]+)([0-9]{3})@ikasle.ehu.(eus|es)+$/gm;
